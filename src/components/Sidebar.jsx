@@ -34,8 +34,7 @@ const Sidebar = () => {
       w={{ base: '70px' }}
       borderRight="1px"
       borderRightColor={borderColor}
-      py={8}
-      position="fixed"
+      py={3}
       left={0}
     >
       <VStack>
