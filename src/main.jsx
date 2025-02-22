@@ -4,10 +4,10 @@ import './style.css'
 import theme from './theme.jsx'
 import { ChakraProvider, ColorModeScript, HStack, Stack, Center, Spinner } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar.jsx';
 
 const Home = lazy(() => import('./pages/Home'));
 const Sidebar = lazy(() => import('./components/Sidebar'));
+const Navbar = lazy(() => import('./components/Navbar'));
 
 const Wrapper = () => {
   return (
