@@ -1,0 +1,29 @@
+/* Apply fullsize to main containers*/
+html, body, #root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.noscroll::-webkit-scrollbar {
+  display: none;
+}
+
+.noscroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.chakra-modal__content-container{
+  position: inherit !important;
+}
+
+/* Remove Chakra UI Focus Input Borders*/
+input:focus, input[data-focus], select:focus, select[data-focus] {
+  z-index: 0 !important;
+  border-color: gray !important;
+  box-shadow: initial !important;
+}
